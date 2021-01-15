@@ -1,0 +1,12 @@
+pipeline {
+  agent { label 'lite' }
+  stages {
+    stage ('Deploy (h0vrbr)') {
+      steps {
+        sh script: 'helm repo add bitnami https://charts.bitnami.com/bitnami', label: '7hg618'
+        sh script: 'helm repo update', label: 'whfi2q'
+        sh script: 'helm upgrade work4-postgresql bitnami/postgresql --install --values postgres.values.yaml --namespace monitoring', label: '5yfvqi'
+      } //end steps
+    } // end stage Deploy
+  }
+}

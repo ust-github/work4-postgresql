@@ -1,0 +1,6 @@
+image:
+  tag: 11
+
+postgresqlUsername: admin
+postgresqlPassword: password
+postgresqlDatabase: dagility
